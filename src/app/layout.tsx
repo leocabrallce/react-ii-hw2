@@ -1,6 +1,7 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Script from "next/script";
 import Navbar from "@/components/Navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,8 @@ export default function RootLayout({
         <main className="m-8">
           {children}
         </main>
+
+        <Script src="/script/script.js" />
       </body>
     </html>
   );

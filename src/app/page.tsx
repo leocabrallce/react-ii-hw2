@@ -14,6 +14,7 @@ export default function Home() {
 
       <div className="mt-2">
         <Image
+          priority
           src={homeImage}
           alt="random image"
           className="rounded max-h-[50vh] w-full object-cover"
